@@ -6,7 +6,7 @@ export default function Todo() {
   const getInputValue = () => {
     const taskElement = document.getElementById("task") as HTMLElement | null;
     if (inputRef.current && taskElement) {
-      let inputfield = inputRef.current.value;
+      const inputfield = inputRef.current.value;
     taskElement.insertAdjacentHTML("beforeend",
       `
     <div class = "todoitem">
